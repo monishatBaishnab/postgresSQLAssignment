@@ -15,7 +15,7 @@ CREATE TABLE students(
 CREATE TABLE courses(
     course_id SERIAL PRIMARY KEY,
     course_name VARCHAR(50) NOT NULL,
-    credit INTEGER NOT NULL
+    credits INTEGER NOT NULL
 );
 
 -- Creating an "enrollment" table:
@@ -93,7 +93,7 @@ Question 1: What is PostgreSQL?
 Answer: Postgres SQL is an open source, highly scalable, secure, relational database management system. Which is basically built using Structured Query Language (SQL).
 
 Question 2: What is the purpose of a database schema in PostgreSQL?
-Answer: A database schema in PostgreSQL is a logical container. It is a combination of database objects such as tables, views, functions, data types, stored procedures, indexes, etc. A database can have many schemas, but a schema can contain only one database.
+Answer: A database schema in PostgreSQL is a logical container for database objects such as tables, views, functions, data types, stored procedures, and indexes. A database can have multiple schemas, which helps organize and manage these objects efficiently.
 
 Question 3: Explain the primary key and foreign key concepts in PostgreSQL.
 Answer: In Postgres SQL, a primary key is an entity that can be used to uniquely identify a row. Primary is never duplicated. When the primary key of a table is placed in another table, it is called the foreign key of that table.
@@ -108,7 +108,7 @@ Question 5: Explain the purpose of the WHERE clause in a SELECT statement.
 Answer: SELECT clause is used in PostgreSQL when data needs to be retrieved from database. The WHERE clause is used to add various conditions to the SELECT clause.
 
 Question 6: What are the LIMIT and OFFSET clauses used for?
-Answer: LIMIT and OFFSET are used in Postgres SQL to control what number of data the query will return and from what position it will return. It is used for pagination.
+Answer: LIMIT and OFFSET are used in PostgreSQL to control the number of records returned by a query and to specify the starting point for the result set, enabling pagination.
 
 Question 7: How can you perform data modification using UPDATE statements?
 Answer: In PostgreSQL, data modification requires some syntax. For example: 
